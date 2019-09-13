@@ -1,0 +1,42 @@
+input[type='checkbox'] {
+  visibility: hidden;
+  position: relative;
+  left: -20px;
+}
+
+#checkbox-label {
+  min-width: 50px;
+  height: 50px;
+  display: inline-flex;
+  flex-direction: row;
+  vertical-align: middle;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+div#check-icons {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#checkbox-label.readonly > * {
+  opacity: 0.7;
+}
+
+div#check-name {
+  height: 20px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.no-pointer {
+  pointer-events: none;
+}

@@ -1,0 +1,7 @@
+<label id="checkbox-label" [class]="getCssClass()">
+  <div id="check-icons" class="d-flex justify-content-center">
+    <i *ngIf="checked" class="fa fa-check line-height-5-quarters" aria-hidden="true"></i>
+  </div>
+  <div id="check-name">&nbsp;{{label}}</div>
+  <input [(ngModel)]="checked" type="checkbox" id="checkbox-{{controlId}}" autocomplete="off" [readonly]="readonly">
+</label>
