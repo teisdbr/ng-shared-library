@@ -1,8 +1,9 @@
 {
   "name": "shared-library",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "peerDependencies": {
     "@angular/common": "^8.0.3",
-    "@angular/core": "^8.0.3"
+    "@angular/core": "^8.0.3",
+    "ngx-bootstrap": "^5.1.2"
   }
 }
