@@ -1,25 +1,34 @@
 <div class="d-flex align-items-center">
   <div class="d-flex w-100 position-relative align-items-center">
-      <input
-        type="text"
-        placeholder="MM/DD/YYYY - MM/DD/YYYY"
-        class="form-control"
-        [ngClass]="cssClasses"
-        [id]="elementId"
-        [minDate]="minDate"
-        [maxDate]="maxDate"
-        bsDaterangepicker
-        [bsConfig]="config"
-        [bsValue]="selectedDateRange"
-        (bsValueChange)="newRangeSelected($event)"
-      />
-    
-      <button *ngIf="selectedDateRange && selectedDateRange.length === 2" class="btn mr-2 position-absolute bg-transparent p-1" (click)="resetAndFocusInput()">
-        <i class="fa fa-times"></i>
-      </button>
+    <input
+      type="text"
+      placeholder="MM/DD/YYYY - MM/DD/YYYY"
+      class="form-control"
+      [ngClass]="cssClasses"
+      [id]="elementId"
+      [minDate]="minDate"
+      [maxDate]="maxDate"
+      bsDaterangepicker
+      [bsConfig]="config"
+      [bsValue]="selectedDateRange"
+      (bsValueChange)="newRangeSelected($event)"
+    />
+
+    <button
+      *ngIf="selectedDateRange && selectedDateRange.length === 2"
+      class="btn mr-2 position-absolute bg-transparent p-1"
+      (click)="resetAndFocusInput()"
+    >
+      <i class="fa fa-times"></i>
+    </button>
   </div>
 
   <div class="ml-3" *ngIf="show90Days">
-    <shr-checkbox [controlId]="'90days'" [checked]="areLast90DaysSelected" (checkedChange)="last90DaysChecked($event)" [label]="'Last 90 Days'"></shr-checkbox>
+    <shr-checkbox
+      [controlId]="'90days'"
+      [checked]="areLast90DaysSelected"
+      (checkedChange)="last90DaysChecked($event)"
+      [label]="'Last 90 Days'"
+    ></shr-checkbox>
   </div>
 </div>
