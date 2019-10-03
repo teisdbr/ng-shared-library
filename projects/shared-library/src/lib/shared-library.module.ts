@@ -6,9 +6,15 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { DateComponent } from './date/date.component';
 import { DateRangePickerComponent } from './date-range-picker/date-range-picker.component';
 import { DatepickerModule, BsDatepickerModule } from 'ngx-bootstrap';
+import { SelectListComponent } from './select-list/select-list.component';
 
 @NgModule({
-  declarations: [CheckboxComponent, DateComponent, DateRangePickerComponent],
+  declarations: [
+    CheckboxComponent,
+    DateComponent,
+    DateRangePickerComponent,
+    SelectListComponent
+  ],
   imports: [
     FormsModule,
     BrowserModule,
@@ -19,7 +25,8 @@ import { DatepickerModule, BsDatepickerModule } from 'ngx-bootstrap';
     CheckboxComponent,
     DateComponent,
     DateRangePickerComponent,
-    BsDatepickerModule
+    BsDatepickerModule,
+    SelectListComponent
   ]
 })
 export class SharedLibraryModule {}
