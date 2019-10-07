@@ -1,0 +1,18 @@
+<div [class]="stylingClasses + ' no-borders'" [formGroup]='addressForm'>
+
+  <input id="addressLine1" placeholder="Address Line 1" class="form-control" formControlName='addressLine1' [readonly]="readonly">
+
+  <input *ngIf='address.addressLine2 || !readonly' id="addressLine2" placeholder="Address Line 2" class="form-control my-1"
+    formControlName='addressLine2' [readonly]="readonly">
+
+  <input id="city" placeholder="City" class="form-control my-1" formControlName='city' [readonly]="readonly">
+
+  <select class='form-control my-1' formControlName='state' pattern='[\w ]+' >
+    <option value='' disabled>Choose a state</option>
+    <option *ngFor='let s of stateDropdownOptions' [value]='s.abbrev'>{{s.name}}</option>
+  </select>
+
+  <input id="zip" placeholder="Zip Code" [textMask]="{mask: zipMask, guide: true, keepCharPositions: true}" class="form-control"
+    formControlName='zip' [readonly]="readonly" pattern='\d{5}'>
+
+</div>
