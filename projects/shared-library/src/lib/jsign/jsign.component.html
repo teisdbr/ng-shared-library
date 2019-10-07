@@ -1,0 +1,16 @@
+<div id="signatureparent" class="my-3">
+  <div id="signature" class="h-100 w-100 position-relative">
+    <div class="eraser position-absolute">
+      <button id="clear-sign-btn" type="button" class="btn" [ngClass]="{ 'd-none' : readonly }" (click)="clear()" data-toggle="tooltip"
+        data-placement="left" title="Clear Signature">
+        <i class="fa fa-eraser fa-2x"></i>
+      </button>
+    </div>
+
+    <div id="img-signature" class="row h-100 w-100 mx-auto">
+      <img id='signatureImg' class='img-fluid w-100 h-100' style="object-fit: contain;">
+    </div>
+
+    <div id="jsignature" class="h-100 w-100"></div>
+  </div>
+</div>
