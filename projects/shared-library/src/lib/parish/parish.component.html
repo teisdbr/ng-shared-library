@@ -1,0 +1,12 @@
+﻿<form [formGroup]='parishForm' novalidate class="no-borders">
+  <div *ngIf='!readonly' class='parish-dropdown'>
+    <select class='form-control' name='parish' (change)='parishChanged()' formControlName='parish'>
+      <option value='null' [attr.disabled]="disableNullOption">Choose a parish</option>
+      <option *ngFor='let p of parishes' [ngValue]='p.name'>{{p.name}}</option>
+    </select>
+  </div>
+
+  <div *ngIf='readonly'>
+    <input id="parish" placeholder="Parish" class="form-control" readonly formControlName='parish'>
+  </div>
+</form>
