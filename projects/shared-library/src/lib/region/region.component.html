@@ -1,0 +1,12 @@
+<form [formGroup]='regionForm' novalidate class="no-borders">
+  <div *ngIf='!readonly' class='parish-dropdown'>
+    <select class='form-control' name='region' (change)='regionChanged()' formControlName='region'>
+      <option value='null'>Choose a region</option>
+      <option *ngFor='let r of regions' [ngValue]='r.name'>{{r.name}}</option>
+    </select>
+  </div>
+
+  <div *ngIf='readonly'>
+    <input id="region" placeholder="Region" class="form-control" readonly formControlName='region'>
+  </div>
+</form>

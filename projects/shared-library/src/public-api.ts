@@ -10,6 +10,7 @@ export * from './lib/select-list/select-list.component';
 export * from './lib/jsign/jsign.component';
 export * from './lib/parish/parish.component';
 export * from './lib/address/address.component';
+export * from './lib/region/region.component';
 export * from './shared.models';
 export * from './shared.constants';
 

@@ -10,6 +10,7 @@ import { DatepickerModule, BsDatepickerModule } from 'ngx-bootstrap';
 import { SelectListComponent } from './select-list/select-list.component';
 import { JsignComponent } from './jsign/jsign.component';
 import { ParishComponent } from './parish/parish.component';
+import { RegionComponent } from './region/region.component';
 import { AddressComponent } from './address/address.component';
 
 @NgModule({
@@ -20,7 +21,7 @@ import { AddressComponent } from './address/address.component';
     SelectListComponent,
     JsignComponent,
     AddressComponent,
-    ParishComponent
+    RegionComponent
   ],
   imports: [
     FormsModule,
@@ -38,6 +39,7 @@ import { AddressComponent } from './address/address.component';
     SelectListComponent,
     JsignComponent,
     ParishComponent,
+    RegionComponent
     AddressComponent
   ]
 })
