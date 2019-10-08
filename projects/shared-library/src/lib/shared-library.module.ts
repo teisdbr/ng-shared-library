@@ -6,11 +6,16 @@ import { TextMaskModule } from 'angular2-text-mask';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { DateComponent } from './date/date.component';
 import { DateRangePickerComponent } from './date-range-picker/date-range-picker.component';
-import { DatepickerModule, BsDatepickerModule } from 'ngx-bootstrap';
+import {
+  DatepickerModule,
+  BsDatepickerModule,
+  TimepickerModule
+} from 'ngx-bootstrap';
 import { SelectListComponent } from './select-list/select-list.component';
 import { JsignComponent } from './jsign/jsign.component';
 import { ParishComponent } from './parish/parish.component';
 import { RegionComponent } from './region/region.component';
+import { DateTimePickerComponent } from './date-time-picker/date-time-picker.component';
 import { AddressComponent } from './address/address.component';
 
 @NgModule({
@@ -21,13 +26,16 @@ import { AddressComponent } from './address/address.component';
     SelectListComponent,
     JsignComponent,
     AddressComponent,
-    RegionComponent
+    RegionComponent,
+    DateTimePickerComponent
   ],
   imports: [
     FormsModule,
     ReactiveFormsModule,
     BrowserModule,
     CommonModule,
+
+    TimepickerModule.forRoot()
     TextMaskModule,
     BsDatepickerModule.forRoot()
   ],
@@ -39,7 +47,8 @@ import { AddressComponent } from './address/address.component';
     SelectListComponent,
     JsignComponent,
     ParishComponent,
-    RegionComponent
+    RegionComponent,
+    DateTimePickerComponent
     AddressComponent
   ]
 })

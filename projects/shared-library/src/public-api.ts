@@ -11,6 +11,7 @@ export * from './lib/jsign/jsign.component';
 export * from './lib/parish/parish.component';
 export * from './lib/address/address.component';
 export * from './lib/region/region.component';
+export * from './lib/date-time-picker/date-time-picker.component';
 export * from './shared.models';
 export * from './shared.constants';
 

@@ -1,0 +1,11 @@
+<div class="d-flex align-items-center text-black no-validation-border" [formGroup]="dateTimeGroup">
+  <div [ngClass]="{'mr-2': showTime, 'w-100': !showTime}">
+    <input formControlName="date" type="text" placeholder="MM/DD/YYYY" class="form-control date-picker" bsDatepicker [bsConfig]="datePickerConfig">
+  </div>
+  <div *ngIf="showTime">
+    <timepicker class="no-validation-border time-picker" formControlName="time" [showSpinners]="false"></timepicker>
+  </div>
+  <div class="ml-1">
+    {{ currentUserTimeZone }}
+  </div>
+</div>
