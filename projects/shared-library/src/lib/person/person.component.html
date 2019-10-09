@@ -1,0 +1,36 @@
+<div class="no-borders" [formGroup]="personForm">
+
+  <div class='d-flex flex-wrap py-1'>
+    <label class="col-12 col-lg-4 form-control-label">Name:</label>
+    <div class="col-12 col-lg-8 d-flex">
+      <div class="col-6 px-0 pr-1">
+          <input type="text" class="form-control" id="firstName" formControlName="firstName" required placeholder="First">
+      </div>
+      <div class="col-6 px-0 pl-1">
+          <input type="text" class="form-control" id="lastName" formControlName="lastName" required placeholder="Last">
+      </div>
+    </div>
+  </div>
+
+  <div class='d-flex flex-wrap py-1'>
+    <label class="col-12 col-lg-4 form-control-label">Email:</label>
+    <div class="col-12 col-lg-8">
+      <input type="text" class="form-control" id="email" formControlName="emailAddress" required email placeholder="user@domain.com" pattern="^(?!user@domain\.com).*$">
+    </div>
+  </div>
+
+  <div class='d-flex flex-wrap py-1'>
+    <label class="col-12 col-lg-4 form-control-label">Phone:</label>
+    <div class="col-12 col-lg-8">
+      <input type="text" class="form-control" id="phone" formControlName="phoneNumber" [textMask]="{mask: phoneMask, guide: true, keepCharPositions: true}" required pattern="(\(\d{3}\)|\d{3}) ?\d{3}-?\d{4}"
+        placeholder="(000) 000-0000">
+    </div>
+  </div>
+
+  <div class='d-flex flex-wrap py-1'>
+    <label class="col-12 col-lg-4 form-control-label">Address:</label>
+    <div class="col-12 col-lg-8">
+      <shr-address [address]="person.address" [readonly]="false" [form]="personForm" [required]="addressRequired"></shr-address>
+    </div>
+  </div>
+</div>
