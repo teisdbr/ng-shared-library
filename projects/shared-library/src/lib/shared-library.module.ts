@@ -25,6 +25,7 @@ import { AddressComponent } from './address/address.component';
     DateRangePickerComponent,
     SelectListComponent,
     JsignComponent,
+    ParishComponent,
     AddressComponent,
     RegionComponent,
     DateTimePickerComponent
@@ -34,8 +35,7 @@ import { AddressComponent } from './address/address.component';
     ReactiveFormsModule,
     BrowserModule,
     CommonModule,
-
-    TimepickerModule.forRoot()
+    TimepickerModule.forRoot(),
     TextMaskModule,
     BsDatepickerModule.forRoot()
   ],
@@ -48,7 +48,7 @@ import { AddressComponent } from './address/address.component';
     JsignComponent,
     ParishComponent,
     RegionComponent,
-    DateTimePickerComponent
+    DateTimePickerComponent,
     AddressComponent
   ]
 })
