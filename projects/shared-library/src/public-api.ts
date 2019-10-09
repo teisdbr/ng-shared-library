@@ -15,6 +15,7 @@ export * from './lib/date-time-picker/date-time-picker.component';
 export * from './lib/parish-multiselect/parish-multiselect.component';
 export * from './shared.models';
 export * from './shared.constants';
+export * from './lib/password/new/new.component';
 export * from './lib/person/person.component';
-
+export * from './lib//region-multiselect/region-multiselect.component';
 export * from './lib/shared-library.module';

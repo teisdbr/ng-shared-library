@@ -1,0 +1,6 @@
+<div>
+  <ng-multiselect-dropdown [placeholder]="'Filter by Region'" [(ngModel)]="selectedRegionObjects" name="region" [data]="regions"  [disabled]="disabled"
+    [settings]="dropdownSettings" (onDeSelectAll)="onSelectAll($event)" (onSelectAll)="onSelectAll($event)" (onSelect)="onSelectionChange($event, 'select')" (onDeSelect)="onSelectionChange($event, 'deselect')">
+  </ng-multiselect-dropdown>
+</div>
+

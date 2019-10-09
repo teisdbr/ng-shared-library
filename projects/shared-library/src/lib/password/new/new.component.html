@@ -1,0 +1,20 @@
+<div class="d-flex align-items-center no-borders" [formGroup]="passwordInputFormGroup">
+    <div class="col-12 p-0">
+        <input data-toggle="popover" #password [attr.type]="isPasswordVisible ? 'text' : 'password'"
+            class="password-field form-control pr-5" placeholder="Password" formControlName="password">
+    </div>
+
+    <form class="eye" novalidate>
+        <button class="btn btn-default btn-sm" title="Toggle password visibility" data-toggle="tooltip"
+            (click)="isPasswordVisible = !isPasswordVisible">
+            <i class="fa fa-2x text-gray" [ngClass]="{'fa-eye': isPasswordVisible, 'fa-eye-slash': !isPasswordVisible}"
+                aria-hidden="true"></i>
+        </button>
+    </form>
+</div>
+<div *ngIf="showValidator" class="m-0 p-0">
+    <vf-strength-meter *ngIf="password.value.length > 0" class="m-t" [password]="password.value"
+        (strength)="onStrength($event)"></vf-strength-meter>
+    <vf-password-feedback id="password-feedback" class="" *ngIf="password.value.length > 0 && !password.valid"
+        [feedback]="passwordFeedback"></vf-password-feedback>
+</div>

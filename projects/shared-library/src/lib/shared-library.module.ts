@@ -20,6 +20,12 @@ import { AddressComponent } from './address/address.component';
 import { PersonComponent } from './person/person.component';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { ParishMultiselectComponent } from '../lib/parish-multiselect/parish-multiselect.component';
+import { RegionMultiselectComponent } from '../public-api';
+import { PasswordInputComponent } from './password/new/new.component';
+import { PasswordFeedbackComponent } from './password/password-feedback/password-feedback.component';
+
+import { StrengthMeterComponent } from './password/strength-meter/strength-meter.component';
+import { StrongPasswordValidatorDirective } from '../directives/strong-password.directive';
 
 @NgModule({
   declarations: [
@@ -31,10 +37,14 @@ import { ParishMultiselectComponent } from '../lib/parish-multiselect/parish-mul
     ParishComponent,
     AddressComponent,
     RegionComponent,
+    StrongPasswordValidatorDirective,
     DateTimePickerComponent,
+    ParishMultiselectComponent,
     PersonComponent
-    DateTimePickerComponent,
-    ParishMultiselectComponent
+    RegionMultiselectComponent,
+    PasswordInputComponent,
+    PasswordFeedbackComponent,    
+    StrengthMeterComponent
 
   ],
   imports: [
@@ -56,11 +66,12 @@ import { ParishMultiselectComponent } from '../lib/parish-multiselect/parish-mul
     JsignComponent,
     ParishComponent,
     RegionComponent,
+    RegionMultiselectComponent,
     DateTimePickerComponent,
     AddressComponent,
+    ParishMultiselectComponent,
     PersonComponent
-    AddressComponent,
-    ParishMultiselectComponent
+    PasswordInputComponent
   ]
 })
 export class SharedLibraryModule {}
