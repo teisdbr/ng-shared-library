@@ -17,8 +17,9 @@ import { ParishComponent } from './parish/parish.component';
 import { RegionComponent } from './region/region.component';
 import { DateTimePickerComponent } from './date-time-picker/date-time-picker.component';
 import { AddressComponent } from './address/address.component';
-import { PersonComponent } from './person/person.component';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { PersonComponent } from './person/person.component';
+
 import { ParishMultiselectComponent } from '../lib/parish-multiselect/parish-multiselect.component';
 import { RegionMultiselectComponent } from '../public-api';
 import { PasswordInputComponent } from './password/new/new.component';
