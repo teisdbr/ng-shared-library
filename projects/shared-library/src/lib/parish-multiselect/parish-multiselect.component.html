@@ -1,0 +1,7 @@
+<div>
+  <ng-multiselect-dropdown [placeholder]="'Filter by Parish'" [(ngModel)]="selectedParishObjects" name="city" [data]="parishes"  [disabled]="disabled"
+    [settings]="dropdownSettings" (onDeSelectAll)="onSelectAll($event)" (onSelectAll)="onSelectAll($event)" (onSelect)="onSelectionChange($event, 'select')" (onDeSelect)="onSelectionChange($event, 'deselect')">
+  </ng-multiselect-dropdown>
+</div>
+
+<!-- formControlName="city" [placeholder]="'Select Parish'"-->

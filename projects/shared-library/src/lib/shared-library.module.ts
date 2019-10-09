@@ -17,6 +17,8 @@ import { ParishComponent } from './parish/parish.component';
 import { RegionComponent } from './region/region.component';
 import { DateTimePickerComponent } from './date-time-picker/date-time-picker.component';
 import { AddressComponent } from './address/address.component';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { ParishMultiselectComponent } from '../lib/parish-multiselect/parish-multiselect.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +30,16 @@ import { AddressComponent } from './address/address.component';
     ParishComponent,
     AddressComponent,
     RegionComponent,
-    DateTimePickerComponent
+    DateTimePickerComponent,
+    ParishMultiselectComponent
+
   ],
   imports: [
     FormsModule,
     ReactiveFormsModule,
     BrowserModule,
     CommonModule,
+    NgMultiSelectDropDownModule,
     TimepickerModule.forRoot(),
     TextMaskModule,
     BsDatepickerModule.forRoot()
@@ -49,7 +54,8 @@ import { AddressComponent } from './address/address.component';
     ParishComponent,
     RegionComponent,
     DateTimePickerComponent,
-    AddressComponent
+    AddressComponent,
+    ParishMultiselectComponent
   ]
 })
 export class SharedLibraryModule {}
