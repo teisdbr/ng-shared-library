@@ -19,3 +19,4 @@ export * from './lib/password/new/new.component';
 export * from './lib/person/person.component';
 export * from './lib//region-multiselect/region-multiselect.component';
 export * from './lib/shared-library.module';
+export * from './lib/card/card.component';

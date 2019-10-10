@@ -26,6 +26,7 @@ import { PasswordFeedbackComponent } from './password/password-feedback/password
 
 import { StrengthMeterComponent } from './password/strength-meter/strength-meter.component';
 import { StrongPasswordValidatorDirective } from '../directives/strong-password.directive';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -40,12 +41,12 @@ import { StrongPasswordValidatorDirective } from '../directives/strong-password.
     StrongPasswordValidatorDirective,
     DateTimePickerComponent,
     ParishMultiselectComponent,
-    PersonComponent
+    PersonComponent,
     RegionMultiselectComponent,
     PasswordInputComponent,
-    PasswordFeedbackComponent,    
-    StrengthMeterComponent
-
+    PasswordFeedbackComponent,
+    StrengthMeterComponent,
+    CardComponent
   ],
   imports: [
     FormsModule,
@@ -70,8 +71,9 @@ import { StrongPasswordValidatorDirective } from '../directives/strong-password.
     DateTimePickerComponent,
     AddressComponent,
     ParishMultiselectComponent,
-    PersonComponent
-    PasswordInputComponent
+    PersonComponent,
+    PasswordInputComponent,
+    CardComponent
   ]
 })
 export class SharedLibraryModule {}
