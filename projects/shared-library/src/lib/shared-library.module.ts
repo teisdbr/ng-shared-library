@@ -21,13 +21,15 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { PersonComponent } from './person/person.component';
 
 import { ParishMultiselectComponent } from '../lib/parish-multiselect/parish-multiselect.component';
-import { RegionMultiselectComponent } from '../public-api';
+
 import { PasswordInputComponent } from './password/new/new.component';
 import { PasswordFeedbackComponent } from './password/password-feedback/password-feedback.component';
 
 import { StrengthMeterComponent } from './password/strength-meter/strength-meter.component';
 import { StrongPasswordValidatorDirective } from '../directives/strong-password.directive';
 import { CardComponent } from './card/card.component';
+import { FiscalYearMultiselectComponent } from './fiscal-year-multiselect/fiscal-year-multiselect.component';
+import { RegionMultiselectComponent } from './region-multiselect/region-multiselect.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,8 @@ import { CardComponent } from './card/card.component';
     PasswordInputComponent,
     PasswordFeedbackComponent,
     StrengthMeterComponent,
-    CardComponent
+    CardComponent,
+    FiscalYearMultiselectComponent
   ],
   imports: [
     FormsModule,
@@ -74,7 +77,8 @@ import { CardComponent } from './card/card.component';
     ParishMultiselectComponent,
     PersonComponent,
     PasswordInputComponent,
-    CardComponent
+    CardComponent,
+    FiscalYearMultiselectComponent
   ]
 })
 export class SharedLibraryModule {}

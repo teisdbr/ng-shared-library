@@ -1,0 +1,5 @@
+<div>
+  <ng-multiselect-dropdown [placeholder]="'Select fiscal years'" [(ngModel)]="selectedYearObjects" name="fiscalYear" [data]="years"  [disabled]="disabled"
+    [settings]="dropdownSettings" (onDeSelectAll)="onSelectAll($event)" (onSelectAll)="onSelectAll($event)" (onSelect)="onSelectionChange($event, 'select')" (onDeSelect)="onSelectionChange($event, 'deselect')">
+  </ng-multiselect-dropdown>
+</div>
