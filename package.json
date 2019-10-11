@@ -1,5 +1,5 @@
 {
-  "name": "ng-library",
+  "name": "shared-library",
   "version": "2.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "librarybuild": "ng build shared-library && cd dist/shared-library && npm publish --registry http://localhost:4873"
+    "publish": "ng build shared-library && cd dist/shared-library && npm publish --registry http://localhost:4873"
   },
   "private": true,
   "dependencies": {
@@ -57,5 +57,16 @@
     "tsickle": "^0.35.0",
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.4.",
+  "main": "public-api.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teisdbr/ng-shared-library.git"
+  },
+  "keywords": [
+    "TEISD"
+  ],
+  "author": "TEISD",
+  "license": "ISC"
 }
