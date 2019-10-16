@@ -1,5 +1,9 @@
 # ng-shared-library
-This library contains all common components and function often used in angular projects. Please refer Wiki for more details or click here [WiKi](https://github.com/teisdbr/ng-shared-library/wiki/Shared-Library)
+This library contains all common components and function often used in angular projects.
+
+Welcome to the ng-shared-library!
+
+**Steps to add a new component**
 
 * Update version number in projects package.json file.
 * Make sure to have a valid token with write permissions in the .npmrc file.
