@@ -1,7 +1,9 @@
 # ng-shared-library
+Welcome to the ng-shared-library!
+
 This library contains all common components and function often used in angular projects.
 
-Welcome to the ng-shared-library!
+
 
 **Steps to add a new component**
 
