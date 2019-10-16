@@ -1,3 +1,2 @@
 # ng-shared-library
-This library contains all common components and function often used in angular projects. Please refer Wiki for more details.
-
+This library contains all common components and function often used in angular projects. Please refer Wiki for more details or click here [WiKi](https://github.com/teisdbr/ng-shared-library/wiki/Shared-Library)
