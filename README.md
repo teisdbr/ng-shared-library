@@ -19,6 +19,17 @@ This library contains all common components and function often used in angular p
 
 ***
 
+**Dependencies**
+* bootstrap 4.3.1
+* ngx-bootstrap 5.1.2
+* ng-multiselect-dropdown 0.2.5
+* jsignature 2.1.3
+* zxcvbn 4.4.2
+* angular2-text-mask 9.0.0
+
+Note: Make sure to have Angular "Core","Forms" and, "Common" modules are been imported into the module that uses these components.
+***
+
 **Component usage**
 
 ## Address
@@ -119,15 +130,4 @@ display: string;
  value: string 
 }[]
 
-***
 
-**Dependencies**
-* bootstrap 4.3.1
-* ngx-bootstrap 5.1.2
-* ng-multiselect-dropdown 0.2.5
-* jsignature 2.1.3
-* zxcvbn 4.4.2
-* angular2-text-mask 9.0.0
-
-
-***
