@@ -55,7 +55,6 @@ import { RegionMultiselectComponent } from './region-multiselect/region-multisel
   imports: [
     FormsModule,
     ReactiveFormsModule,
-    BrowserModule,
     CommonModule,
     NgMultiSelectDropDownModule,
     TimepickerModule.forRoot(),
