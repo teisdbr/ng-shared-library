@@ -7,7 +7,7 @@ This library contains all common components and function often used in angular p
 
 **Steps to add a new component**
 
-* Update version number in projects package.json file.
+* Update version number in project's package.json file.
 * Make sure to have a valid token with write permissions in the .npmrc file.
 * Use npm publish command in terminal to publish.
 
