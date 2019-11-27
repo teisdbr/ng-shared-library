@@ -16,6 +16,8 @@ This library contains all common components and function often used in angular p
 **Npm install the shared library into a project**
 
 * Use `npm install @teisdbr/ng-shared-library --registry  https://npm.pkg.github.com/` command to install the package.
+* Import Shared Library Module in the  App Module using `import {SharedLibraryModule} from `@teisdbr/ng-shared-library`
+
 
 ***
 
@@ -26,6 +28,8 @@ This library contains all common components and function often used in angular p
 * jsignature 2.1.3
 * zxcvbn 4.4.2
 * angular2-text-mask 9.0.0
+
+Make sure to have all the required style sheets/scripts from the above dependecies refered in the `angular.json` 
 
 Note: Make sure to have Angular "Core","Forms" and, "Common" modules are been imported into the module that uses these components.
 ***
