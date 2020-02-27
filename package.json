@@ -1,6 +1,6 @@
 {
-  "name": "shared-library",
-  "version": "3.0.0",
+  "name": "@teisdbr/ng-shared-library",
+  "version": "1.01",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "publish": "ng build shared-library && cd dist/shared-library && npm publish"
+    "publish": "ng build shared-library --prod && cd dist/shared-library && npm publish ../../"
   },
   "private": true,
   "dependencies": {
