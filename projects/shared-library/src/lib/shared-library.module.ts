@@ -7,10 +7,9 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { DateComponent } from './date/date.component';
 import { DateRangePickerComponent } from './date-range-picker/date-range-picker.component';
 import {
-  DatepickerModule,
-  BsDatepickerModule,
   TimepickerModule
-} from 'ngx-bootstrap';
+} from 'ngx-bootstrap/timepicker';
+import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
 import { SelectListComponent } from './select-list/select-list.component';
 import { JsignComponent } from './jsign/jsign.component';
 import { ParishComponent } from './parish/parish.component';
