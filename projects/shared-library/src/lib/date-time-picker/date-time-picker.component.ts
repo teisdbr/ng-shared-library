@@ -8,7 +8,8 @@ import {
   OnDestroy
 } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { TimepickerConfig, BsDatepickerConfig } from 'ngx-bootstrap';
+import { TimepickerConfig } from 'ngx-bootstrap/timepicker';
+import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
 import {
   FormGroup,
   Validators,
@@ -95,7 +96,7 @@ export class DateTimePickerComponent implements OnInit, OnChanges, OnDestroy {
 
   constructor(private fb: FormBuilder) {}
 
- 
+
   createDateTimeFromTwoDates(dateSource: Date, timeSource: Date): Date {
     // If time is not captured, return dateSource immediately
     if (!this.showTime || !timeSource) {
