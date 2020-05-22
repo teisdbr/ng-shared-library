@@ -26,10 +26,7 @@ export class FiscalYearMultiselectComponent implements OnInit {
 
   // Get list of parishes from constants
   years = fiscalYears.map(p => {
-    return {
-      id: p.name,
-      text: p.name
-    };
+    return p.name;
   });
 
   selectedYears: string[] = [];

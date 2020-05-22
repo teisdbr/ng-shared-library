@@ -8,15 +8,15 @@ import { parishes } from '../../shared.constants';
   styleUrls: ['./parish-multiselect.component.scss']
 })
 export class ParishMultiselectComponent implements OnInit {
-  
+
 
   @Input()
   disabled = false;
-  @Input() 
+  @Input()
   singleSelection = false;
   @Output()
   change: EventEmitter<string[]> = new EventEmitter<string[]>();
-  
+
   //#region Settings
   dropdownSettings = {
     singleSelection: this.singleSelection,
@@ -31,10 +31,7 @@ export class ParishMultiselectComponent implements OnInit {
 
   // Get list of parishes from constants
   parishes = parishes.map(p => {
-    return {
-      id: p.name,
-      text: p.name
-    };
+    return p.name;
   });
 
   selectedParishes: string[] = [];

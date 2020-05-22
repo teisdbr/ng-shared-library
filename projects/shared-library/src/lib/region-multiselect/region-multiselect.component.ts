@@ -8,21 +8,18 @@ import { regions } from '../../shared.constants';
   styleUrls: ['./region-multiselect.component.scss']
 })
 export class RegionMultiselectComponent implements OnInit {
- 
+
 
   @Input()
   disabled = false;
-  @Input() 
+  @Input()
   singleSelection = false;
   @Output()
   change: EventEmitter<string[]> = new EventEmitter<string[]>();
 
   // Get list of regions from constants
   regions = regions.map(p => {
-    return {
-      id: p.name,
-      text: p.name
-    };
+    return p.name;
   });
 
    //#region Settings
