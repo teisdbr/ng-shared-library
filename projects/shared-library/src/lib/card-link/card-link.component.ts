@@ -12,9 +12,7 @@ export class CardLinkComponent implements OnInit {
   @Input() width: string;
   @Input() bodyPadding: string;
   @Input() description: string;
-  @Input() imgLinkName: string; //App Constant #region Image Links
-  @Input() imageLinks : any;
-  @Input() imageMarkUpGenerator : any;
+  @Input() innerHtml: string;
   constructor() {}
 
   ngOnInit() {
