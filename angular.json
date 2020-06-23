@@ -5,6 +5,11 @@
   "projects": {
     "shared-library": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/shared-library",
       "sourceRoot": "projects/shared-library/src",
       "prefix": "lib",
