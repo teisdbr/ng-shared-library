@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { TextMaskModule } from 'angular2-text-mask';
 import { CheckboxComponent } from './checkbox/checkbox.component';
@@ -59,6 +59,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
+    RouterModule,
     NgMultiSelectDropDownModule,
     TimepickerModule.forRoot(),
     TextMaskModule,
