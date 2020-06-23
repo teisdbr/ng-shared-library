@@ -30,6 +30,7 @@ import { CardComponent } from './card/card.component';
 import { FiscalYearMultiselectComponent } from './fiscal-year-multiselect/fiscal-year-multiselect.component';
 import { RegionMultiselectComponent } from './region-multiselect/region-multiselect.component';
 import { CardLinkComponent } from './card-link/card-link.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { CardLinkComponent } from './card-link/card-link.component';
     StrengthMeterComponent,
     CardComponent,
     FiscalYearMultiselectComponent,
-    CardLinkComponent
+    CardLinkComponent,
+    SpinnerComponent
   ],
   imports: [
     FormsModule,
