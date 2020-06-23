@@ -28,6 +28,8 @@ This library contains all common components and function often used in angular p
 * jsignature 2.1.3
 * zxcvbn 4.4.2
 * angular2-text-mask 9.0.0
+* underscore 1.9.1
+* sweetalert2 8.14.0
 
 Make sure to have all the required style sheets/scripts from the above dependecies refered in the `angular.json` 
 
