@@ -7,7 +7,7 @@
     <ng-content select="div.content"></ng-content>
     <div><ng-content></ng-content></div>
   </div>
-  <div class="card-footer">
+  <div class="card-footer" *ngIf="isFooter">
     <ng-content select="div.footer"></ng-content>
     <div><ng-content></ng-content></div>
   </div>
