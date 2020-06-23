@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Injector, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -32,7 +32,7 @@ import { RegionMultiselectComponent } from './region-multiselect/region-multisel
 import { CardLinkComponent } from './card-link/card-link.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { ATagRouterLinkComponent } from './a-tag-router-link/a-tag-router-link.component';
-
+import { createCustomElement } from '@angular/elements';
 @NgModule({
   declarations: [
     CheckboxComponent,
@@ -88,6 +88,23 @@ import { ATagRouterLinkComponent } from './a-tag-router-link/a-tag-router-link.c
     SpinnerComponent,
     ATagRouterLinkComponent,
     TextMaskModule
-  ]
+  ],
+  entryComponents: [ATagRouterLinkComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class SharedLibraryModule {}
+export class SharedLibraryModule {
+  ngDoBootstrap() {}
+  constructor(private injector: Injector) {
+    // Convert `PopupComponent` to a custom element.
+    const ATagRouterLinkElement = createCustomElement(ATagRouterLinkComponent, {
+      injector
+    });
+    // Register the custom element with the browser.
+    if (!customElements.get('a-tag-router-link-component')) {
+      customElements.define(
+        'a-tag-router-link-component',
+        ATagRouterLinkElement
+      );
+    }
+  }
+}

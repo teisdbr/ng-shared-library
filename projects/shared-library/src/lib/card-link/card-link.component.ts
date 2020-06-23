@@ -24,9 +24,6 @@ export class CardLinkComponent implements OnInit {
   get cardBodyPadding() {
     return this.bodyPadding === undefined ? '.25rem' : this.bodyPadding;
   }
-  get cardImgLinkName() {
-    return this.imgLinkName === undefined ? '' : this.imgLinkName;
-  }
   get cardRoute() {
     return this.route === undefined
       ? ''

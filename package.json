@@ -1,6 +1,6 @@
 {
   "name": "@teisdbr/ng-shared-library",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -17,6 +17,7 @@
     "@angular/common": "^9.1.2",
     "@angular/compiler": "^9.1.2",
     "@angular/core": "^9.1.2",
+    "@angular/elements": "^9.1.2",
     "@angular/forms": "^9.1.2",
     "@angular/platform-browser": "^9.1.2",
     "@angular/platform-browser-dynamic": "^9.1.2",
