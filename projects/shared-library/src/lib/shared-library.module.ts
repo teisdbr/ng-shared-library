@@ -31,6 +31,7 @@ import { FiscalYearMultiselectComponent } from './fiscal-year-multiselect/fiscal
 import { RegionMultiselectComponent } from './region-multiselect/region-multiselect.component';
 import { CardLinkComponent } from './card-link/card-link.component';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { ATagRouterLinkComponent } from './a-tag-router-link/a-tag-router-link.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { SpinnerComponent } from './spinner/spinner.component';
     CardComponent,
     FiscalYearMultiselectComponent,
     CardLinkComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    ATagRouterLinkComponent
   ],
   imports: [
     FormsModule,
@@ -82,7 +84,9 @@ import { SpinnerComponent } from './spinner/spinner.component';
     PasswordInputComponent,
     CardComponent,
     FiscalYearMultiselectComponent,
-	CardLinkComponent
+    CardLinkComponent,
+    SpinnerComponent,
+    ATagRouterLinkComponent
   ]
 })
 export class SharedLibraryModule {}
