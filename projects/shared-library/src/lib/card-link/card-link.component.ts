@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'shr-card-link',
   templateUrl: './card-link.component.html',
-  styleUrls: ['./card-link.component.css']
+  styleUrls: ['./card-link.component.scss']
 })
 export class CardLinkComponent implements OnInit {
   @Input() icon: string; // Input should look like 'fas fa-users
