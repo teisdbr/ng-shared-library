@@ -1,6 +1,6 @@
 {
   "name": "@teisdbr/ng-shared-library",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "publish": "ng build shared-library --prod && node_modules/copyfiles/copyfiles .npmrc .npmignore dist/shared-library && cd dist/shared-library && npm publish"
+    "publish": "ng build shared-library --prod && copyfiles .npmrc .npmignore dist/shared-library && cd dist/shared-library && npm publish"
   },
   "private": true,
   "dependencies": {
