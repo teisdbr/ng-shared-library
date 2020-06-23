@@ -33,6 +33,7 @@ import { CardLinkComponent } from './card-link/card-link.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { ATagRouterLinkComponent } from './a-tag-router-link/a-tag-router-link.component';
 import { createCustomElement } from '@angular/elements';
+import { LazyElementDirective } from '../directives/lazy-element.directive';
 @NgModule({
   declarations: [
     CheckboxComponent,
@@ -55,7 +56,8 @@ import { createCustomElement } from '@angular/elements';
     FiscalYearMultiselectComponent,
     CardLinkComponent,
     SpinnerComponent,
-    ATagRouterLinkComponent
+    ATagRouterLinkComponent,
+    LazyElementDirective
   ],
   imports: [
     FormsModule,
@@ -87,7 +89,8 @@ import { createCustomElement } from '@angular/elements';
     CardLinkComponent,
     SpinnerComponent,
     ATagRouterLinkComponent,
-    TextMaskModule
+    TextMaskModule,
+    LazyElementDirective
   ],
   entryComponents: [ATagRouterLinkComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
