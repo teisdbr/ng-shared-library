@@ -86,7 +86,8 @@ import { ATagRouterLinkComponent } from './a-tag-router-link/a-tag-router-link.c
     FiscalYearMultiselectComponent,
     CardLinkComponent,
     SpinnerComponent,
-    ATagRouterLinkComponent
+    ATagRouterLinkComponent,
+    TextMaskModule
   ]
 })
 export class SharedLibraryModule {}
