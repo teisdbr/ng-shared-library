@@ -1,16 +1,14 @@
-<div class="card">
-  <div class="card-header d-flex align-content-center justify-content-between">
-    <h2 class="card-title h5 mb-0 d-flex align-items-center">
-      <ng-content select=".project-title"></ng-content>
-    </h2>
-    <span>
-      <ng-content select=".project-button"></ng-content>
-    </span>
+<div class="card mb-4">
+  <div class="card-header bg-primary text-black flex-wrap">
+    <ng-content select="div.title"></ng-content>
+    <small><ng-content></ng-content></small>
   </div>
-  <div class="card-body px-3">
-    <ng-content select=".project-content"></ng-content>
+  <div class="card-body">
+    <ng-content select="div.content"></ng-content>
+    <div><ng-content></ng-content></div>
   </div>
-  <div *ngIf="showFooter" class="card-footer d-flex justify-content-between">
-    <ng-content select=".project-footer"></ng-content>
+  <div class="card-footer">
+    <ng-content select="div.footer"></ng-content>
+    <div><ng-content></ng-content></div>
   </div>
 </div>
