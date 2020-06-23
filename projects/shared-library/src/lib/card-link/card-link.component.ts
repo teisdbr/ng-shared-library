@@ -13,6 +13,7 @@ export class CardLinkComponent implements OnInit {
   @Input() bodyPadding: string;
   @Input() description: string;
   @Input() imgLinkName: string; //App Constant #region Image Links
+  @Input() imageLinks : any;
   @Input() imageMarkUpGenerator : any;
   constructor() {}
 
