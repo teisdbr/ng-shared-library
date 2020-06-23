@@ -24,3 +24,5 @@ export * from './lib/fiscal-year-multiselect/fiscal-year-multiselect.component';
 export * from './lib/a-tag-router-link/a-tag-router-link.component';
 export * from './lib/card-link/card-link.component';
 export * from './lib/spinner/spinner.component';
+export * from './services/swal.service';
+export * from './directives/lazy-element.directive';

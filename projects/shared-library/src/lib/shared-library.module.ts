@@ -34,6 +34,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
 import { ATagRouterLinkComponent } from './a-tag-router-link/a-tag-router-link.component';
 import { createCustomElement } from '@angular/elements';
 import { LazyElementDirective } from '../directives/lazy-element.directive';
+import { SwalService } from '../services/swal.service';
 @NgModule({
   declarations: [
     CheckboxComponent,
@@ -92,6 +93,7 @@ import { LazyElementDirective } from '../directives/lazy-element.directive';
     TextMaskModule,
     LazyElementDirective
   ],
+  providers:[SwalService],
   entryComponents: [ATagRouterLinkComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
