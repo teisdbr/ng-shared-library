@@ -1,0 +1,43 @@
+<div class="p-2 ">
+  <div class="card text-center hover-bg hover-white" style="max-width: 500px;">
+    <div class="{{ cssClass }}">
+      <div
+        class="constrain-img-mw-100"
+        [innerHTML]="imageMarkUpGenerator(cardImgLinkName)"
+      ></div>
+
+      <div class="ml-2 pl-2 pr-2 pb-2 pt-3 mb-5" style="height: 5rem;">
+        <div class="row">
+          <div
+            class="d-none d-sm-block col-sm-1 col-md-2 col-lg-1 col-xl-2 px-2"
+          >
+            <i class="icon-properties mr-2" [ngClass]="icon"></i>
+          </div>
+          <div
+            class="col-xs-12 col-sm-11 col-md-10 col-lg-11 col-xl-10 text-left"
+          >
+            <div class="font-style">
+              <ng-content select="div.icon-title"></ng-content>
+            </div>
+            <div>
+              <ng-content select="div.icon-description"></ng-content>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card-body overflow-hidden mb-5"
+        [ngStyle]="{ padding: cardBodyPadding }"
+      >
+        <small><ng-content select="div.content"></ng-content></small>
+        <a
+          href="#"
+          [routerLink]="'/' + cardRoute"
+          class="stretched-link"
+          *ngIf="cardRoute"
+        ></a>
+      </div>
+    </div>
+  </div>
+</div>

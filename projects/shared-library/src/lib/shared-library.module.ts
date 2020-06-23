@@ -29,6 +29,7 @@ import { StrongPasswordValidatorDirective } from '../directives/strong-password.
 import { CardComponent } from './card/card.component';
 import { FiscalYearMultiselectComponent } from './fiscal-year-multiselect/fiscal-year-multiselect.component';
 import { RegionMultiselectComponent } from './region-multiselect/region-multiselect.component';
+import { CardLinkComponent } from './card-link/card-link.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { RegionMultiselectComponent } from './region-multiselect/region-multisel
     PasswordFeedbackComponent,
     StrengthMeterComponent,
     CardComponent,
-    FiscalYearMultiselectComponent
+    FiscalYearMultiselectComponent,
+    CardLinkComponent
   ],
   imports: [
     FormsModule,
@@ -76,7 +78,8 @@ import { RegionMultiselectComponent } from './region-multiselect/region-multisel
     PersonComponent,
     PasswordInputComponent,
     CardComponent,
-    FiscalYearMultiselectComponent
+    FiscalYearMultiselectComponent,
+	CardLinkComponent
   ]
 })
 export class SharedLibraryModule {}
