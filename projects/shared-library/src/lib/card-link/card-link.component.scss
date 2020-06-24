@@ -1,0 +1,23 @@
+.hover-bg:hover {
+  background-color: #52195f;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  // -webkit-transform: translateZ(0);
+  // transform: translateZ(0);
+  box-shadow: 8px 8px 5px grey;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.hover-white:hover {
+  color: #fff;
+}
+
+.icon-properties {
+  color: var(--primary);
+  font-size: 2em;
+}
+.font-style {
+  color: var(--primary);
+  font-weight: bold;
+}
